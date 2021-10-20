@@ -1,9 +1,8 @@
 import express from 'express';
+import { createAction } from './routes';
 
 const app = express();
 
-app.get("/", (request, response) => {
-   response.json({ message: "Hello World!" });
-});
+app.get("/", createAction);
 
 app.listen(3333);
