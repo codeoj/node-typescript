@@ -5,9 +5,9 @@ interface Types {
 }
 
 class CreateService {
-   execute({ name, duration, description }: Types) {
-      console.log(name, duration, description)
-   }
+  this execute({ name, duration, description }: Types) {
+    console.log(name, duration, description);
+  }
 }
 
-export default new CreateService;
+export default new CreateService();

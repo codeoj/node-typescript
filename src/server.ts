@@ -1,5 +1,6 @@
-import express from 'express';
-import { createAction } from './routes';
+import express from "express";
+
+import { createAction } from "./routes";
 
 const app = express();
 
