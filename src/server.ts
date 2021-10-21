@@ -1,9 +1,11 @@
 import express from "express";
 
-import { createAction } from "./routes";
+import { categoriesRoutes } from "./routes/categories.routes";
 
 const app = express();
 
-app.get("/", createAction);
+app.use(express.json());
+
+app.use(categoriesRoutes);
 
 app.listen(3333);
